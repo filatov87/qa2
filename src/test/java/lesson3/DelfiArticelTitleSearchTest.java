@@ -29,7 +29,7 @@ public class DelfiArticelTitleSearchTest {
 //        Find all titles and add them to list
         List<WebElement> articleTitles = driver.findElements(ARTICLE_TITLE);
 //        Check if list not empty
-        assertFalse("Title list is empty", !articleTitles.isEmpty());
+        assertFalse("Title list is empty", articleTitles.isEmpty());
 
 //        Go through a list and GetText() from WebElement
         boolean isTitlePresent = false;
