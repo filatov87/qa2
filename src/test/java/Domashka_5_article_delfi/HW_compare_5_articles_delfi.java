@@ -33,10 +33,10 @@ public class HW_compare_5_articles_delfi {
 //        List<WebElement> articleTitles = driver.findElements(ARTICLE_TITLE);
 //        List<WebElement> comment_counts = driver.findElements(COMMENT_COUNT);
         List<WebElement> articles_with_comments = driver.findElements(ART_AND_COM);
-        int Art_with_Comments = articles_with_comments;
-        System.out.println("Статей с коментами -" + Art_with_Comments);
-        for (WebElement LIST : Art_with_Comments) {
-            System.out.println(LIST);
+//        int Art_with_Comments = articles_with_comments;
+//        System.out.println("Статей с коментами -" + Art_with_Comments);
+        for (WebElement LIST : articles_with_comments) {
+            System.out.println(LIST.getText());
         }
         driver.quit();
     }
