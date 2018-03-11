@@ -23,9 +23,8 @@ public class Article {
     }
 
     public void setCommentCount(String commentCount) {
-        this.commentCount = Integer.valueOf(commentCount);    //Отрбасываем скобки, чтобы выводилось только чилсо коментов без скобок
+             this.commentCount = Integer.valueOf(commentCount);
     }
-
     public String getPhotoLink() {
         return photoLink;
     }
