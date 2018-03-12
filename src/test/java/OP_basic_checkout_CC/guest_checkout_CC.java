@@ -26,6 +26,6 @@ public class guest_checkout_CC {
 
 
 
-//        driver.quit();
+        driver.quit();
     }
 }
