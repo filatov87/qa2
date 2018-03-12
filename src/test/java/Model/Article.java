@@ -1,5 +1,7 @@
 package Model;
 
+import static java.lang.Integer.valueOf;
+
 public class Article {
     private String title;
     private Integer commentCount;
@@ -23,7 +25,7 @@ public class Article {
     }
 
     public void setCommentCount(String commentCount) {
-             this.commentCount = Integer.valueOf(commentCount);
+             this.commentCount = valueOf(commentCount);
     }
     public String getPhotoLink() {
         return photoLink;
