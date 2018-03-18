@@ -1,31 +1,36 @@
 package lesson3;
 
+import Pages.BaseFunc;
 import junit.framework.Assert;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import java.util.List;
+
 
 import static junit.framework.Assert.*;
 
 public class DelfiArticelTitleSearchTest {
+    private BaseFunc baseFunc = new BaseFunc();
+
     private static final String TITLE = "Rimšēvičam jānoliek pilnvaras, paziņo Reizniece-Ozola";
     private static final String MAIN_PAGE_WEB_URL = "http://www.delfi.lv";
     private static final String MAIN_PAGE_MOB_URL = "http://m.delfi.lv";
     private static final By ARTICLE_TITLE = By.xpath("//a[@class='top2012-title']");
+    private static final Logger LOGGER = LogManager.getLogger(DelfiArticelTitleSearchTest.class);
 
     @Test
     public void articleTitleSearchTest() {
-        System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-//        don't forget to maximize window
-        driver.manage().window().maximize();
-//        Open main page of the Web version
-        driver.get(MAIN_PAGE_WEB_URL);
+        LOGGER.info("We are starting our tests");
+        LOGGER.info("Opening delfi desktop page");
+        baseFunc.goToUrl(MAIN_PAGE_WEB_URL);
+//        driver.get(MAIN_PAGE_WEB_URL); - старый подход, который мы проходили на 3-ей лекции
 //        Find all titles and add them to list
         List<WebElement> articleTitles = driver.findElements(ARTICLE_TITLE);
 //        Check if list not empty
