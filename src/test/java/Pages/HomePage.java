@@ -1,5 +1,6 @@
 package Pages;
 
+import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -15,5 +16,11 @@ public class HomePage {
 
     public List<WebElement> getAllTitles() {
         return baseFunc.getElements(ARTICLE_TITLE);
+    }
+    public ArticlePage goToFirstArticle() {
+        Assert.assertTrue("There are no articles", !getAllTitles().isEmpty());
+        WebElement firstArticle = getAllTitles().get(0);
+        firstArticle.click();
+        return new ArticlePage(baseFunc);
     }
 }

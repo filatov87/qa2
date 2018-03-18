@@ -1,10 +1,8 @@
 package lesson3;
 
+import Pages.ArticlePage;
 import Pages.BaseFunc;
 import Pages.HomePage;
-import junit.framework.Assert;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
@@ -23,7 +21,6 @@ public class DelfiArticelTitleSearchTest {
     private static final String TITLE = "Rimšēvičam jānoliek pilnvaras, paziņo Reizniece-Ozola";
     private static final String MAIN_PAGE_WEB_URL = "http://www.delfi.lv";
     private static final String MAIN_PAGE_MOB_URL = "http://m.delfi.lv";
-//    private static final By ARTICLE_TITLE = By.xpath("//a[@class='top2012-title']"); // Т.к. это у нас вынесено в HomePage.java
     private static final Logger LOGGER = LogManager.getLogger(DelfiArticelTitleSearchTest.class);
 
     @Test
@@ -36,9 +33,11 @@ public class DelfiArticelTitleSearchTest {
 
         HomePage homePage = new HomePage(baseFunc);
 //        Find all titles and add them to list
-
+List<WebElement> articleTitles = homePage.getAllTitles();
 //        Check if list not empty
         assertFalse("Title list is empty", articleTitles.isEmpty());
+// Go to the first article page
+        ArticlePage articlePage = homePage.goToFirstArticle();
 
 //        Go through a list and GetText() from WebElement
         boolean isTitlePresent = false;
