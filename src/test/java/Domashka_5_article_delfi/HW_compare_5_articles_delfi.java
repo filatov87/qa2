@@ -1,6 +1,6 @@
 package Domashka_5_article_delfi;
 
-import com.sun.org.apache.xpath.internal.operations.And;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -30,16 +30,9 @@ public class HW_compare_5_articles_delfi {
 //        открыли глав.страницу
         driver.get(HOME_PAGE);
 //        выводим все элементы класса в лист
-        List<WebElement> articleTitles = driver.findElements(ARTICLE_TITLE);
-        List<WebElement> comment_counts = driver.findElements(COMMENT_COUNT);
-//        List<WebElement> articles_with_comments = driver.findElements(ART_AND_COM);
-//        System.out.println("Статей с коментами -" + Art_with_Comments);
-        for (WebElement Articles : articleTitles)
-            for (WebElement Com_Count : comment_counts) {
-                System.out.print(Articles.getText() + Com_Count.getText());
-                System.out.println();
-            }
-        driver.quit();
+        List<WebElement> Articles = driver.findElements(ARTICLE_TITLE);
+//       List<Articles>
+
     }
 }
 

@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 import java.util.List;
 
 
@@ -18,9 +19,9 @@ import static junit.framework.Assert.*;
 public class DelfiArticelTitleSearchTest {
     private BaseFunc baseFunc = new BaseFunc();
 
-    private static final String TITLE = "Rimšēvičam jānoliek pilnvaras, paziņo Reizniece-Ozola";
-    private static final String MAIN_PAGE_WEB_URL = "http://www.delfi.lv";
-    private static final String MAIN_PAGE_MOB_URL = "http://m.delfi.lv";
+    private static final String TITLE = "Латвия планирует выдворить сотрудников посольства РФ, которые занимаются разведкой ";
+    private static final String MAIN_PAGE_WEB_URL = "http://rus.delfi.lv";
+    private static final String MAIN_PAGE_MOB_URL = "http://m.rus.delfi.lv";
     private static final Logger LOGGER = LogManager.getLogger(DelfiArticelTitleSearchTest.class);
 
     @Test
@@ -33,7 +34,7 @@ public class DelfiArticelTitleSearchTest {
 
         HomePage homePage = new HomePage(baseFunc);
 //        Find all titles and add them to list
-List<WebElement> articleTitles = homePage.getAllTitles();
+        List<WebElement> articleTitles = homePage.getAllTitles();
 //        Check if list not empty
         assertFalse("Title list is empty", articleTitles.isEmpty());
 // Go to the first article page
@@ -57,7 +58,7 @@ List<WebElement> articleTitles = homePage.getAllTitles();
 //        Go through a list and getText() from WebElemtn
 //        Exit loop in case if TITLE is present
 //        If we don't find element that matches TITLE - display message "element not found"
-
+        baseFunc.closeBrowser();
     }
 
 

@@ -23,6 +23,9 @@ public class BaseFunc {
         }
         driver.get(url);
     }
+    public void closeBrowser() {
+        driver.quit();
+    }
 
     public List<WebElement> getElements(By locator) {
         return driver.findElements(locator);
