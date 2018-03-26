@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class HomePage {
-    BaseFunc baseFunc;
+    private BaseFunc baseFunc;
     private static final By ARTICLE_TITLE = By.xpath("//a[@class='top2012-title']");
 
     public HomePage(BaseFunc baseFunc) {
@@ -23,4 +23,5 @@ public class HomePage {
         firstArticle.click();
         return new ArticlePage(baseFunc);
     }
+
 }
