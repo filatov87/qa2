@@ -1,7 +1,7 @@
 package Model;
 
 public class TicketResponse {
-    private firstname name;
+    private name Name;
     private lastname surname;
     private From afrom;
     private To ato;

@@ -14,11 +14,11 @@ public class TicketCheckStepDef {
 
     @When("we are requesting confirmation")
     public void get_ticket_confirmation() throws IOException {
-        ticketResponse = ticketChecker.getTickets()
+        ticketResponse = ticketChecker.getTickets();
     }
     @Then("Name should be (.*)")
     public void check_name(String name) {
-        Assert.assertEquals("Wrong name: ", name, ticketResponse.getName();
+        Assert.assertEquals("Wrong name: ", name, ticketResponse.getName());
     }
     @Then("Surname should be (.*)")
     public void check_surname(String surname) {

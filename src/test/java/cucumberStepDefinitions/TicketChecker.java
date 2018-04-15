@@ -1,6 +1,5 @@
 package cucumberStepDefinitions;
 
-import Model.Response;
 import Model.TicketResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.ResponseEntity;
