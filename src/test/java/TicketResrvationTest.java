@@ -1,5 +1,7 @@
 import Pages.BaseFunc;
 import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
@@ -8,7 +10,7 @@ public class TicketResrvationTest {
     public class TicketReservation {
         private String HOME_PAGE = "http://www.qaguru.lv/tickets/";
         private BaseFunc baseFunc = new BaseFunc();
-        private static final Logger LOGGER = LogManager.getLogger(TicketReservation.class);
+        private final Logger LOGGER = LogManager.getLogger(TicketReservation.class);
 
 
         @Test
@@ -18,7 +20,7 @@ public class TicketResrvationTest {
             baseFunc.goToUrl(HOME_PAGE);
             LOGGER.info("Selecting FROM");
 //            выбираем ОТКУДА (ВВО)
-
+            baseFunc.driver.
 //            выбираем КУДА (РИКС)
 //            Нажимаем ГОГОГО
 //            Добавляем ИМЯ

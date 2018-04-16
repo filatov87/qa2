@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseFunc {
-    WebDriver driver;
+    public WebDriver driver;
 
     public BaseFunc() {
         System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
