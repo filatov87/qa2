@@ -19,6 +19,9 @@ public class BaseFunc {
         }
         driver.get(url);
     }
+public void selectFrom() {
+
+}
 
     public void closeBrowser() {
         driver.quit();

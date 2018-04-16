@@ -16,11 +16,13 @@ public class TicketResrvationTest {
         @Test
         public void ticketReservation() {
             LOGGER.info("Starting test");
+//            вызываем driver
+            baseFunc.driver
 //            открываем дом.страницу
             baseFunc.goToUrl(HOME_PAGE);
             LOGGER.info("Selecting FROM");
 //            выбираем ОТКУДА (ВВО)
-            baseFunc.driver.
+            baseFunc.selectFrom();
 //            выбираем КУДА (РИКС)
 //            Нажимаем ГОГОГО
 //            Добавляем ИМЯ
@@ -37,6 +39,7 @@ public class TicketResrvationTest {
 //            Нажимаем Book!
 //                    Выбираем места - 1 и 2 (опционально)
 //                    Нажимаем Book!
+            baseFunc.closeBrowser();
         }
 
     }
