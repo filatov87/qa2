@@ -10,17 +10,17 @@ public class TicketResrvationTest {
     public class TicketReservation {
         private String HOME_PAGE = "http://www.qaguru.lv/tickets/";
         private BaseFunc baseFunc = new BaseFunc();
-        private final Logger LOGGER = LogManager.getLogger(TicketReservation.class);
+//        private final Logger LOGGER = LogManager(TicketReservation.class);
 
 
         @Test
         public void ticketReservation() {
-            LOGGER.info("Starting test");
+//            LOGGER.info("Starting test");
 //            вызываем driver
 //            baseFunc;
 //            открываем дом.страницу
             baseFunc.goToUrl(HOME_PAGE);
-            LOGGER.info("Selecting FROM");
+//            LOGGER.info("Selecting FROM");
 //            выбираем ОТКУДА (ВВО)
             baseFunc.selectFrom();
 //            выбираем КУДА (РИКС)

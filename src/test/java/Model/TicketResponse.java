@@ -11,111 +11,75 @@ public class TicketResponse {
     private Integer kids;
     private Integer seat;
 
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 
     public void setSurname(String surname) {
         this.surname = surname;
     }
 
+    public String getAfrom() {
+        return afrom;
+    }
+
     public void setAfrom(String afrom) {
         this.afrom = afrom;
+    }
+
+    public String getAto() {
+        return ato;
     }
 
     public void setAto(String ato) {
         this.ato = ato;
     }
 
+    public Integer getBugs() {
+        return bugs;
+    }
+
     public void setBugs(Integer bugs) {
         this.bugs = bugs;
+    }
+
+    public Integer getDiscount() {
+        return discount;
     }
 
     public void setDiscount(Integer discount) {
         this.discount = discount;
     }
 
+    public Integer getAdults() {
+        return adults;
+    }
+
     public void setAdults(Integer adults) {
         this.adults = adults;
+    }
+
+    public Integer getKids() {
+        return kids;
     }
 
     public void setKids(Integer kids) {
         this.kids = kids;
     }
 
-    public void setSeat(Integer seat) {
-        this.seat = seat;
-    }
-
-    public void name getName() {
-        return name;
-    }
-
-    public void surname getSurname() {
-        return surname;
-    }
-
-    public void seat getSeat() {
+    public Integer getSeat() {
         return seat;
     }
 
-    public void afrom getAfrom() {
-        return afrom;
-    }
-
-    public void ato getAto() {
-        return ato;
-    }
-
-    public bugs getBugs() {
-        return bugs;
-    }
-
-    public discount getDiscount() {
-        return discount;
-    }
-
-    public adults getAdults() {
-        return adults;
-    }
-
-    public kids getKids() {
-        return kids;
+    public void setSeat(Integer seat) {
+        this.seat = seat;
     }
 }
-
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public void setSurname(String surname) {
-//        this.surname = surname;
-//    }
-//
-//    public void setAfrom(String afrom) {
-//        this.afrom = afrom;
-//    }
-//
-//    public void setAto(String ato) {
-//        this.ato = ato;
-//    }
-//
-//    public void setBugs(Integer bugs) {
-//        this.bugs = bugs;
-//    }
-//
-//    public void setDiscount(Integer discount) {
-//        this.discount = discount;
-//    }
-//
-//    public void setAdults(Integer adults) {
-//        this.adults = adults;
-//    }
-//
-//    public void setKids(Integer kids) {
-//        this.kids = kids;
-//    }
-//
-//    public void setSeat(Integer seat) {
-//        this.seat = seat;
-
