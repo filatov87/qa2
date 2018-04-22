@@ -17,7 +17,7 @@ public class TicketResrvationTest {
         public void ticketReservation() {
             LOGGER.info("Starting test");
 //            вызываем driver
-            baseFunc.driver
+//            baseFunc;
 //            открываем дом.страницу
             baseFunc.goToUrl(HOME_PAGE);
             LOGGER.info("Selecting FROM");
@@ -43,5 +43,7 @@ public class TicketResrvationTest {
 //                    Нажимаем Book!
             baseFunc.closeBrowser();
         }
-
     }
+}
+
+

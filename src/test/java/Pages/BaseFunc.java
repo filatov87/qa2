@@ -23,12 +23,12 @@ public class BaseFunc {
 
     public void selectFrom() {
         driver.findElement(By.xpath("//*[@id='afrom']")).click();
-        driver.findElement(By.xpath("//*[@value ="RIX"")).click();
+        driver.findElement(By.xpath("//*[@value ='RIX']")).click();
     }
 
     public void selectTo() {
         driver.findElement(By.xpath("//*[@id='bfrom']")).click();
-        driver.findElement(By.xpath("//*[@value ="VVO"")).click();
+        driver.findElement(By.xpath("//*[@value ='VVO']")).click();
     }
     public void SubmitTicketSearch() {
         driver.findElement(By.xpath("//*[@class='gogogo']")).click();

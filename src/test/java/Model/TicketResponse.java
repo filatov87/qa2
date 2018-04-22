@@ -1,94 +1,121 @@
 package Model;
 
 public class TicketResponse {
-    private name Name;
-    private lastname surname;
-    private From afrom;
-    private To ato;
-    private Baggage bugs;
-    private Discount discount;
-    private Adults adults;
-    private Kids kids;
-    private Seat seat;
+    private String name;
+    private String surname;
+    private String afrom;
+    private String ato;
+    private Integer bugs;
+    private Integer discount;
+    private Integer adults;
+    private Integer kids;
+    private Integer seat;
 
-    public Seat getSeat() {
-        return seat;
-    }
-
-    public void setSeat(Seat seat) {
-        this.seat = seat;
-    }
-
-    public Name getName() {
-        return name;
-    }
-
-    public void setName(Name name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public Surname getSurname() {
-        return surname;
-    }
-
-    public void setSurname(Surname surname) {
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    public String getAfrom() {
-        return afrom;
-    }
-
-    public void setAfrom(From afrom) {
+    public void setAfrom(String afrom) {
         this.afrom = afrom;
     }
 
-    public String getAto() {
-        return ato;
-    }
-
-    public void setAto(To ato) {
+    public void setAto(String ato) {
         this.ato = ato;
     }
 
-    public Baggage getBugs() {
-        return bugs;
-    }
-
-    public void setName(firstname name) {
-        this.name = name;
-    }
-
-    public void setSurname(lastname surname) {
-        this.surname = surname;
-    }
-
-    public Adults getAdults() {
-        return adults;
-    }
-
-    public void setAdults(Adults adults) {
-        this.adults = adults;
-    }
-
-    public Kids getKids() {
-        return kids;
-    }
-
-    public void setKids(Kids kids) {
-        this.kids = kids;
-    }
-
-    public void setBugs(Baggage bugs) {
-
+    public void setBugs(Integer bugs) {
         this.bugs = bugs;
     }
 
-    public Discount getDiscount() {
+    public void setDiscount(Integer discount) {
+        this.discount = discount;
+    }
+
+    public void setAdults(Integer adults) {
+        this.adults = adults;
+    }
+
+    public void setKids(Integer kids) {
+        this.kids = kids;
+    }
+
+    public void setSeat(Integer seat) {
+        this.seat = seat;
+    }
+
+    public void name getName() {
+        return name;
+    }
+
+    public void surname getSurname() {
+        return surname;
+    }
+
+    public void seat getSeat() {
+        return seat;
+    }
+
+    public void afrom getAfrom() {
+        return afrom;
+    }
+
+    public void ato getAto() {
+        return ato;
+    }
+
+    public bugs getBugs() {
+        return bugs;
+    }
+
+    public discount getDiscount() {
         return discount;
     }
 
-    public void setDiscount(Discount discount) {
-        this.discount = discount;
+    public adults getAdults() {
+        return adults;
+    }
+
+    public kids getKids() {
+        return kids;
     }
 }
+
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public void setSurname(String surname) {
+//        this.surname = surname;
+//    }
+//
+//    public void setAfrom(String afrom) {
+//        this.afrom = afrom;
+//    }
+//
+//    public void setAto(String ato) {
+//        this.ato = ato;
+//    }
+//
+//    public void setBugs(Integer bugs) {
+//        this.bugs = bugs;
+//    }
+//
+//    public void setDiscount(Integer discount) {
+//        this.discount = discount;
+//    }
+//
+//    public void setAdults(Integer adults) {
+//        this.adults = adults;
+//    }
+//
+//    public void setKids(Integer kids) {
+//        this.kids = kids;
+//    }
+//
+//    public void setSeat(Integer seat) {
+//        this.seat = seat;
+
