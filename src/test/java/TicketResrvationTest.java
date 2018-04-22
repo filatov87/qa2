@@ -24,7 +24,9 @@ public class TicketResrvationTest {
 //            выбираем ОТКУДА (ВВО)
             baseFunc.selectFrom();
 //            выбираем КУДА (РИКС)
+            baseFunc.selectTo();
 //            Нажимаем ГОГОГО
+            baseFunc.SubmitTicketSearch();
 //            Добавляем ИМЯ
 //            Добавляем ФАМИЛИЯ
 //            Добавляем СКИД.НОМЕР (7 символов)
