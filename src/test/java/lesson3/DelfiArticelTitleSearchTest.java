@@ -1,16 +1,15 @@
 package lesson3;
 
 import Pages.BaseFunc;
-import junit.framework.Assert;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import java.util.List;
 
 
@@ -32,7 +31,7 @@ public class DelfiArticelTitleSearchTest {
         baseFunc.goToUrl(MAIN_PAGE_WEB_URL);
 //        driver.get(MAIN_PAGE_WEB_URL); - старый подход, который мы проходили на 3-ей лекции
 //        Find all titles and add them to list
-        List<WebElement> articleTitles = driver.findElements(ARTICLE_TITLE);
+        List<WebElement> articleTitles = baseFunc.findArticles();
 //        Check if list not empty
         assertFalse("Title list is empty", articleTitles.isEmpty());
 
@@ -49,6 +48,7 @@ public class DelfiArticelTitleSearchTest {
 //        If we don't find element that matches TITLE - Display message "element not found"
         assertTrue("No article found", isTitlePresent);
 //        Open main page of Mobile version
+        baseFunc.goToUrl(MAIN_PAGE_MOB_URL);
 //        Find all titles and add them to a list
 //        Check if list is not empty
 //        Go through a list and getText() from WebElemtn

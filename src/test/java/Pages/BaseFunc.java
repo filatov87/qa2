@@ -1,7 +1,11 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import java.util.List;
 
 public class BaseFunc {
     WebDriver driver;
@@ -17,5 +21,9 @@ public class BaseFunc {
             url = "http://" + url;
         }
         driver.get(url);
+    }
+    public List<WebElement> findArticles()  {
+        driver.findElements(By.xpath(("//a[@class='top2012-title']")));
+        return findArticles();
     }
 }
